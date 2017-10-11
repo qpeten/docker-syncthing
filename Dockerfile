@@ -7,8 +7,7 @@ MAINTAINER Quentin Peten
 ENV SYNCTHING_USER syncthing
 ENV UID 1000
 
-RUN apt-get update -q && apt-get upgrade -y
-RUN apt-get install -qy \
+RUN apt-get update -q && apt-get install -qy \
         ca-certificates \
 	curl \
 	apt-transport-https
